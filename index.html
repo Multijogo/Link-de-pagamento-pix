@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//pt-BR">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<title>BINGO MULTI JOGO</title>
+</head>
+<h3>
+AREA PIX</h3>
+<img src="1.jpeg" width="100%"height="130px">
+
+
+<h>PIX COLA</h><br><br>
+<textarea id="texto" readonly>
+00020126330014br.gov.bcb.pix01110256263159552040000530398654042.005802BR5922Carlos Dos Santos Reis6009Sao Paulo62070503***63049B68
+</textarea>
+<br><br>
+    <button onclick="copiarTexto()">Copiar</button><br><br>
+<p>PARA OUTROS VALORES</p>
+
+<textarea id="texto1"readonly >
+00020126330014br.gov.bcb.pix01110256263159552040000530398654042.005802BR5922Carlos Dos Santos Reis6009Sao Paulo62070503***63049B68
+</textarea>
+<br><br>
+    <button
+    onclick="copiarTexto1()">Copiar</button><br>
+<script>
+
+    function copiarTexto() {
+
+        let textoCopiado = document.getElementById("texto");
+
+        textoCopiado.select();
+
+        textoCopiado.setSelectionRange(0, 99999)
+
+        document.execCommand("copy");
+
+        alert("O texto é: " + textoCopiado.value);
+
+    }
+
+</script>
+
+<script>
+
+    function copiarTexto1() {
+
+        let textoCopiado = document.getElementById("texto1");
+
+        textoCopiado.select();
+
+        textoCopiado.setSelectionRange(0, 99999)
+
+        document.execCommand("copy");
+
+        alert("O texto é: " + textoCopiado.value);
+
+    }
+
+</script>
+
+<style>
+body {
+    background:BLACK ;
+}
+textarea {
+    width:100%;
+    height:50px;
+}
+h { color:white;
+    margin-left:150px;
+}
+h3{color :white;
+margin-left:40%;
+    
+}
+p {
+    margin-left:80px;
+}
+</style>
