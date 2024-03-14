@@ -8,7 +8,7 @@
 <img src="21.jpg" width="100%"height="90px">
 
 
-<h>PIX COLA</h><br><br>
+<h>PIX COLA</h><br>
 <p>1º Copie o código PIX abaixo.</p><p>click em COPIAR </p><p>
 
 2º Abra o app do seu banco e escolha a opção PIX, como se fosse fazer uma transferência.</p><p>
@@ -17,24 +17,32 @@
 <p>4º APOS A transferência ENVIA o COMPROVANTE</p>
 👇
 <br>
-<br>
 <k>PARA UMA CARTELA R$ 2.00 </k>
 <textarea id="texto" readonly>
 00020126330014br.gov.bcb.pix01110256263159552040000530398654042.005802BR5922Carlos Dos Santos Reis6009Sao Paulo62070503***63049B68
 </textarea>
-<br><br>
-    <button class="btn"onclick="copiarTexto()">Copiar</button><br><br>
+<br>
+    <button class="btn"onclick="copiarTexto()">Copiar</button><br>
     👇👇👇<br>
 <k>PARA OUTROS VALORES</k>
 
 <textarea id="texto1"readonly >
 00020126780014br.gov.bcb.pix0136901d5ecf-8bbd-4eff-8515-8d744dce3d6d0216BINGO MULTIJOGO 5204000053039865802BR5922Carlos Dos Santos Reis6008Salvador62130509MULTIJOGO63044E4C
 </textarea>
-<br><br>
+<br>
     <button
-    class="btn"onclick="copiarTexto1()">Copiar</button><br>
+    class="btn"onclick="copiarTexto1()">Copiar</button><br><br>
+    <k>PIX CPF</k>
+    <textarea id="texto2"readonly >
+02562631595
+</textarea>
+<br>
+    <button
+    class="btn"onclick="copiarTexto2()">Copiar</button><br>
 <script>
-
+    
+<script>
+;
     function copiarTexto() {
 
         let textoCopiado = document.getElementById("texto");
@@ -64,6 +72,24 @@
         document.execCommand("copy");
 
         alert("CODIGO PIX COPIADO COM SUCESSO:\n\n " + textoCopiado.value);
+
+    }
+
+</script>
+
+<script>
+
+    function copiarTexto2() {
+
+        let textoCopiado = document.getElementById("texto2");
+
+        textoCopiado.select();
+
+        textoCopiado.setSelectionRange(0, 99999)
+
+        document.execCommand("copy");
+
+        alert("CPF PIX COPIADO COM SUCESSO:\n\n " + textoCopiado.value);
 
     }
 
@@ -100,7 +126,7 @@ p {
     }
 </style>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://wa.me/5571992290058?text=Quero%20CADASTRA%20" style="position:fixed;width:60px;height:60px;bottom:500px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+<a href="https://wa.me/5571992290058?text=Quero%20CADASTRA%20" style="position:fixed;width:60px;height:60px;bottom:500px;right:10px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
   z-index:1000;" target="_blank">
 <i style="margin-top:16px" class="fa fa-whatsapp"></i>
 </body>
